@@ -1,0 +1,85 @@
+/* =========================================
+   Movie Card Component Styles
+   ========================================= */
+
+.movie-card {
+  background-color: #222;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.movie-card.clickable {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.movie-card.clickable:hover {
+  transform: scale(1.05);
+}
+
+/* Image Wrapper */
+.image-wrapper {
+  width: 100%;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: #222; 
+}
+
+/* Typography */
+.movie-card h3 {
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+.movie-card p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Favorite Button */
+.fav-btn {
+  margin-top: auto;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #444;
+  color: white;
+  transition: 0.2s;
+  font-weight: bold;
+}
+
+.fav-btn:hover {
+  background-color: #555;
+}
+
+.fav-btn.active {
+  background-color: #e50914; 
+}
+
+/* Rating Colors */
+.rating-green { color: #4CAF50; font-weight: bold; }
+.rating-yellow { color: #FFC107; font-weight: bold; }
+.rating-red { color: #F44336; font-weight: bold; }
+.rating-grey { color: #888; font-weight: bold; }
+
+.movie-card.clickable {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card.clickable:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); /* Pop-out shadow effect */
+}
